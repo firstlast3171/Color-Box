@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+
+    box-sizing: border-box;
+    height: 100vh;
+}
+.container{
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-items: center;
+ background: black;
+ height: 100vh;
+}
+.header{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ color: white;
+ align-items: center;
+ background: blue;
+ width: 100%;
+ padding-bottom: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    width: 100%;
+    
+}
+nav button{
+    padding: 10px 8px;
+    background: skyblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.squares{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    gap: 10px;
+}
+.square{
+    width: 200px;
+    height: 200px;
+    border: solid 1px red;
+    border-radius: 10px 30px;
+    margin: 10px;
+    background-color: red;
+}
+.fade{
+    opacity: 0;
+    transition: 0.5s all;
+}
